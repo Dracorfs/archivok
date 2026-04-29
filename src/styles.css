@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Linux Libertine", "Georgia", "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-wiki-link: #0645ad;
+  --color-wiki-link-visited: #0b0080;
+  --color-wiki-link-red: #ba0000;
+  --color-wiki-bg: #ffffff;
+  --color-wiki-border: #a2a9b1;
+  --color-wiki-sidebar: #f8f9fa;
+  --color-wiki-text: #202122;
+  --color-wiki-muted: #54595d;
+  --color-archivo-accent: #75aadb;
+}
+
+html, body {
+  background: var(--color-wiki-bg);
+  color: var(--color-wiki-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.prose-wiki h1 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--color-wiki-border);
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.prose-wiki h2 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--color-wiki-border);
+  padding-bottom: 0.2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+
+.prose-wiki h3 {
+  font-size: 1.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.prose-wiki p {
+  margin-bottom: 0.5rem;
+}
+
+.prose-wiki a {
+  color: var(--color-wiki-link);
+  text-decoration: none;
+}
+
+.prose-wiki a:hover {
+  text-decoration: underline;
+}
+
+.prose-wiki a.red {
+  color: var(--color-wiki-link-red);
+}
+
+.prose-wiki ul, .prose-wiki ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-wiki ul { list-style: disc; }
+.prose-wiki ol { list-style: decimal; }
+
+.prose-wiki blockquote {
+  border-left: 3px solid var(--color-wiki-border);
+  padding-left: 0.75rem;
+  color: var(--color-wiki-muted);
+  margin: 0.5rem 0;
+}
